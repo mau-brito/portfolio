@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Mau Brito</title>
+  <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,500i,700,700i|Source+Serif+Pro:400,700&display=swap" rel="stylesheet">
+<!--Bootstrap core CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/e01a883430.js" crossorigin="anonymous"></script>
+<!--CSS styles link-->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <!--BEGIN BODY-->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.next-season').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        const target = document.querySelector(btn.getAttribute('data-target'));
+        if(target){
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
+</script>
+  <body>
+    <!--BEGIN BIO AND CONTACT SECTION AT TOP-->
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="contact">About me</h4>
+              <img src="images/maubrito.jpg" class="bioimage" alt="icon1" width="20%">
+              <p class="text-muted">I’m driven by the kind of ideas that feel effortless but are obsessively crafted. My background spans photography, illustration, and graphic design, but I do my strongest work when working in a team. To stay balanced, I spend a lot of time on a bike, most notably racing in the Little 500, the largest cycling race in the country. Outside of school, I’m usually reading and traveling; I’ve been to 26 countries, but Mexico, where I was born and raised will always be home.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <!--Font awesome icons with links-->
+              <ul class="center list-unstyled">
+                <li><a href="https://www.instagram.com/framebymau"><span style="color: white;"><i class="fab fa-instagram-square"></i></span></a></li>
+                <li><a href="https://www.linkedin.com/in/mau-brito"><span style="color: white;"><i class="fab fa-linkedin"></i></span></a></li>
+                <li><a href="mailto:maubrito28@gmail.com"><span style="color: white;"><i class="fas fa-envelope-open-text "></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--START COLLAPSING NAV BAR-->
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">Mau Brito</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+  <!--END BIO AND CONTACT SECTION AT TOP OF PAGE-->
+  <!--SPRING SECTION-->
+<div class="spring-container" id="spring">
+  <main class="spring-page">
+    <p class="season-intro">This is what I created as<br>the seasons changed.</p>
+    <h1 class="season-title">Spring</h1>
+    <div class="gallery-section">
+    <a href="trojanhorse.html">
+      <img src="images/trojanhorse.png" class="img1" alt="trojanhorse">
+    </a>
+    <a href="cinzano.html">
+      <img src="images/cinzano.png" class="img2" alt="cinzano">
+    </a>
+    <a href="little500.html">
+      <img src="images/little500t.png" class="img3" alt="little500">
+    </a>
+    <a href="mahler.html">
+      <img src="images/mahler.png" class="img4" alt="mahler">
+    </a>
+    </div>
+    <div class="next-season" data-target="#summer">
+      <span>Next</span>
+      <div class="arrow-down"></div>
+    </div>
+  </main>
+</div>
+
+<!-- ================= SUMMER SECTION ================= -->
+<section class="summer-container" id="summer">
+  <!-- ROW 1 -->
+  <div class="summer-row left row-1">
+    <a href="granfalloonfest.html" class="summer-image">
+      <div class="image-stack">
+        <img src="images/granfalloon.png" alt="">
+        <img src="images/granfalloon.png" alt="">
+        <img src="images/granfalloon.png" alt="">
+        <img src="images/granfalloon.png" alt="">
+      </div>
+    </a>
+
+    <div class="summer-title pink">THIS</div>
+  </div>
+
+  <!-- ROW 2 -->
+  <div class="summer-row right row-2">
+    <a href="yesand.html" class="summer-image">
+      <div class="image-stack">
+        <img src="images/yesand.png" alt="">
+        <img src="images/yesand.png" alt="">
+        <img src="images/yesand.png" alt="">
+        <img src="images/yesand.png" alt="">
+      </div>
+    </a>
+
+    <div class="summer-title white">WAS</div>
+  </div>
+
+  <!-- ROW 3 -->
+  <div class="summer-row left row-3">
+    <a href="editorialillustrations.html" class="summer-image">
+      <div class="image-stack">
+        <img src="images/editorialillos.png" alt="">
+        <img src="images/editorialillos.png" alt="">
+        <img src="images/editorialillos.png" alt="">
+        <img src="images/editorialillos.png" alt="">
+      </div>
+    </a>
+
+    <div class="summer-title dark">MY</div>
+  </div>
+
+  <!-- ROW 4 -->
+  <div class="summer-row right row-4">
+    <a href="iufootball.html" class="summer-image">
+      <div class="image-stack">
+        <img src="images/iufootball.png" alt="">
+        <img src="images/iufootball.png" alt="">
+        <img src="images/iufootball.png" alt="">
+        <img src="images/iufootball.png" alt="">
+      </div>
+    </a>
+
+    <div class="summer-title green">SUMMER</div>
+  </div>
+
+  <div class="next-season" data-target="#fall">
+  <span>Next</span>
+  <div class="arrow-down"></div>
+</div>
+
+</section>
+
+<!-- FALL SECTION -->
+<div class="fall-container" id="fall">
+  <main class="fall-page">
+    
+    <!-- Intro text similar to Spring -->
+    <p class="season-intro">This fall, I had some standout moments.</p>
+
+    <!-- Gallery of 4 items -->
+    <div class="fall-gallery">
+      <!-- Item 1 -->
+      <div class="fall-item">
+        <a href="cinzano100.html">
+        <img src="images/cinzano100.png" alt="cinzano100">
+      </a>
+        <h3 class="fall-header">Cinzano 100</h3>
+        <p class="fall-subheader">Organized a road race attracting over 150 riders.<br><span class="subsmall">Photo & Social</span></p>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="fall-item">
+        <a href="fallforarkansas.html">
+        <img src="images/fallforarkansas.png" alt="fallforarkansas">
+      </a>
+        <h3 class="fall-header">Arkansas Department of Parks, Heritage and Tourism</h3>
+        <p class="fall-subheader">Designed an award-winning integrated marketing campaign.<br><span class="subsmall">Marketing</span></p>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="fall-item">
+        <a href="iuhomecoming.html">
+        <img src="images/mediaschool.png" alt="mediaschool">
+      </a>
+        <h3 class="fall-header">Indiana University Homecoming</h3>
+        <p class="fall-subheader">Photographed and produced a Wizard of Oz infographic for the Media School.<br><span class="subsmall">Photo & Graphic Design </span></p>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="fall-item">
+        <a href="nativeamericanheritagemonth.html">
+        <img src="images/nativeamericanheritagemonth.png" alt="nativeamericanheritagemonth">
+      </a>
+        <h3 class="fall-header">Native American Heritage Month</h3>
+        <p class="fall-subheader">Published my first school-wide marketing campaign.<br><span class="subsmall">Graphic Design</span></p>
+      </div>
+    </div>
+
+    <div class="next-season" data-target="#winter">
+      <span>Next</span>
+      <div class="arrow-down"></div>
+    </div>
+  </main>
+</div>
+
+<!-- WINTER SECTION -->
+<div class="winter-container" id="winter">
+  <main class="winter-page">
+
+    <p class="season-intro">Winter felt like this.</p>
+    <h1 class="season-title summer-title">Winter</h1>
+
+    <div class="winter-domino">
+      <a href="bikereveal.html">
+      <img src="images/bikereveal.png" class="domino d1" alt="bikereveal">
+    </a>
+    <a href="blackfeministtheory.html">
+      <img src="images/blackfeministtheory.png" class="domino d2" alt="blackfeministtheory">
+    </a>
+    <a href="lightupthenight.html">
+      <img src="images/lightupthenight.png" class="domino d3" alt="lightupthenight">
+    </a>
+    <a href="worldaidsday.html">
+      <img src="images/worldaidsday.png" class="domino d4" alt="worldaidsday">
+    </a>
+    </div>
+
+    <div class="next-season" data-target="#spring">
+      <span>Back to Top</span>
+      <div class="arrow-down2"></div>
+    </div>
+
+  </main>
+</div>
+  <!--END MAIN SECTION-->
+
+      <!--SCRIPTS NECESSARY FOR BOOTSTRAP-->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

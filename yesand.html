@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project Details">
+    <title>Mau Brito | Exhibit Columbus Yes And</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,500i,700,700i|Source+Serif+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e01a883430.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body style="background-color: #598e7b;">
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="contact">About me</h4>
+              <img src="images/maubrito.jpg" class="bioimage" alt="Mau Brito" width="20%">
+              <p class="text-muted">I’m driven by the kind of ideas that feel effortless but are obsessively crafted. My background spans photography, illustration, and graphic design, but I do my strongest work when working in a team. To stay balanced, I spend a lot of time on a bike, most notably racing in the Little 500, the largest cycling race in the country. Outside of school, I’m usually reading and traveling; I’ve been to 26 countries, but Mexico, where I was born and raised will always be home.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <ul class="center list-unstyled">
+                <li><a href="https://www.instagram.com/framebymau"><span style="color: white;"><i class="fab fa-instagram-square"></i></span></a></li>
+                <li><a href="https://www.linkedin.com/in/mau-brito"><span style="color: white;"><i class="fab fa-linkedin"></i></span></a></li>
+                <li><a href="mailto:maubrito28@gmail.com"><span style="color: white;"><i class="fas fa-envelope-open-text "></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">Mau Brito</a>
+          <a href="portfolio.html" class="navbar-brand d-flex align-items-center" style="font-size: 1rem; color: white !important;"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="project-section yesand-page">
+      <div class="container-fluid" style="max-width: 1400px;">
+        
+        <div class="row">
+          <div class="col-12">
+            <h1 class="project-title">Exhibit Columbus: Yes And</h1>
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          
+          <div class="col-lg-5 text-left pl-lg-5">
+            <div class="project-description yesand-text">
+              <p>
+                <strong>ASK:</strong><br>
+                Promote Exhibit Columbus, a program that commissions designers to build site-responsive installations around the city’s iconic architecture.
+              </p>
+              <p>
+                <strong>INSIGHT:</strong><br>
+                The exhibition’s theme was "Yes, And"—the improv rule of accepting the current reality and building upon it.
+              </p>
+              <p>
+                <strong>CONCEPT:</strong><br>
+                The poster established the "Yes" by showing the landmarks in their original state, while my photos captured the "And", documenting the transformation of those spaces.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="yesand-hero-container">
+              <img src="images/yesandposter.png" class="project-image yesand-hero-img" alt="Main Yes And Poster">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="marquee-container">
+          <div class="marquee-content">
+            <img src="images/yesand1.jpg" class="project-image marquee-img" alt="Gallery 1">
+            <img src="images/yesand2.jpg" class="project-image marquee-img" alt="Gallery 2">
+            <img src="images/yesand3.jpg" class="project-image marquee-img" alt="Gallery 3">
+            <img src="images/yesand4.jpg" class="project-image marquee-img" alt="Gallery 4">
+
+            <img src="images/yesand5.jpg" class="project-image marquee-img" alt="Gallery 1">
+            <img src="images/yesand6.jpg" class="project-image marquee-img" alt="Gallery 2">
+            <img src="images/yesand7.jpg" class="project-image marquee-img" alt="Gallery 3">
+            <img src="images/yesand8.jpg" class="project-image marquee-img" alt="Gallery 4">
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <div id="lightbox-modal" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+      const modal = document.getElementById("lightbox-modal");
+      const modalImg = document.getElementById("lightbox-img");
+      const closeBtn = document.querySelector(".close-btn");
+      const images = document.querySelectorAll(".project-image");
+
+      images.forEach(img => {
+        img.addEventListener("click", function() {
+          if (window.innerWidth > 768) {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+          }
+        });
+      });
+
+      closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+      });
+
+      modal.addEventListener("click", function(e) {
+        if (e.target !== modalImg) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

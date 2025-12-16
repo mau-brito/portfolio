@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project Details">
+    <title>Mau Brito | Mahler's Symphony No.2</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,500i,700,700i|Source+Serif+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e01a883430.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body style="background-color: #598e7b;">
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="contact">About me</h4>
+              <img src="images/maubrito.jpg" class="bioimage" alt="Mau Brito" width="20%">
+              <p class="text-muted">I’m driven by the kind of ideas that feel effortless but are obsessively crafted. My background spans photography, illustration, and graphic design, but I do my strongest work when working in a team. To stay balanced, I spend a lot of time on a bike, most notably racing in the Little 500, the largest cycling race in the country. Outside of school, I’m usually reading and traveling; I’ve been to 26 countries, but Mexico, where I was born and raised will always be home.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <ul class="center list-unstyled">
+                <li><a href="https://www.instagram.com/framebymau"><span style="color: white;"><i class="fab fa-instagram-square"></i></span></a></li>
+                <li><a href="https://www.linkedin.com/in/mau-brito"><span style="color: white;"><i class="fab fa-linkedin"></i></span></a></li>
+                <li><a href="mailto:maubrito28@gmail.com"><span style="color: white;"><i class="fas fa-envelope-open-text "></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">Mau Brito</a>
+          <a href="portfolio.html" class="navbar-brand d-flex align-items-center" style="font-size: 1rem; color: white !important;"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="project-section">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-12">
+            <h1 class="project-title">Mahler's Symphony No.2</h1>
+            
+            <div class="project-description">
+              <p>
+                ASK:<br>Create a campaign for the Jacobs School of Music’s biggest performance of the year: Gustav Mahler’s Symphony No. 2.
+              </p>
+              <p>
+                INSIGHT:<br>College students generally aren’t chasing classical music, but they will show up for a spectacle. The focus of the campaign isn't genre, instead promote the sheer magnitude of a 300-piece orchestra.
+              </p>
+              <p>
+                CONCEPT:<br>Play with the limitations of the medium to prove the scale of the event. If the orchestra is too big to fit on a poster, a screen, or an ad, it’s definitely something you have to see in person.
+              </p>
+              <p>
+                <em>(Note: My campaign won the pitch and was rolled out across campus newspapers, digital signage, and social media.)</em>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-gallery">
+          <div class="project-card">
+            <img src="images/mahler1.png" class="project-image" alt="Project view 1">
+          </div>
+          <div class="project-card">
+            <img src="images/mahler2.png" class="project-image" alt="Project view 2">
+          </div>
+          <div class="project-card">
+            <img src="images/mahler3.png" class="project-image" alt="Project view 3">
+          </div>
+        </div>
+
+        <div class="project-gallery project-gallery-lg">
+          <div class="project-card">
+            <img src="images/maumahler1.png" class="project-image" alt="Project Large View 1">
+          </div>
+          <div class="project-card">
+            <img src="images/maumahler2.png" class="project-image" alt="Project Large View 2">
+          </div>
+        </div>
+
+        <div class="video-button-container">
+           <a href="https://www.youtube.com/watch?v=8gHPXmEcCyA" target="_blank" class="video-link-btn">
+             <i class="fas fa-play-circle"></i> Watch Campaign Video
+           </a>
+        </div>
+        
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <div id="lightbox-modal" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+      const modal = document.getElementById("lightbox-modal");
+      const modalImg = document.getElementById("lightbox-img");
+      const closeBtn = document.querySelector(".close-btn");
+      const images = document.querySelectorAll(".project-image");
+
+      images.forEach(img => {
+        img.addEventListener("click", function() {
+          if (window.innerWidth > 768) {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+          }
+        });
+      });
+
+      closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+      });
+
+      modal.addEventListener("click", function(e) {
+        if (e.target !== modalImg) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

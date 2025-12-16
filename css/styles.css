@@ -1,0 +1,2211 @@
+/*Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap*/
+
+/* DEFAULT (portfolio + inner pages) */
+body {
+  background: url("../images/background1.png") no-repeat fixed top center;
+  background-size: cover;
+}
+
+/* INDEX PAGE ONLY */
+body.home {
+  background: black;
+}
+
+/* Prevent horizontal overflow and remove black border */
+html, body {
+  overflow-x: hidden;
+}
+
+.fullpage-center {
+  min-height: calc(100vh - 56px); /* subtract the nav height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*NAV BACKGROUND
+The .bg-dark controls the color of the navigation bar at top*/
+.bg-dark {
+  background-color: #51b95e !important;
+  padding: 0;
+}
+/*The .bg-light controls the background around the button images */
+.bg-light {
+  background: none !important;
+}
+
+/*This controls the background around the main headline and deck */
+section.jumbotron.text-center {
+  background: none !important;
+}
+/*This controls the background behind the text underneath the button images */
+.card-body {
+  background-color: #51b95e !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  padding: 8px 20px !important;   /* horizontal padding makes the pill shape */
+  border-radius: 999px;           /* full pill / circle ends */
+  width: fit-content;
+  margin: 0 auto;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-body:hover {
+  transform: scale(1.07);
+}
+/*This styles your headshot image to be round with a shadow */
+.bioimage {
+float: left;
+margin-right: 20px;
+border-radius: 50%;
+border: 2px solid white !important;
+}
+
+/*TYPOGRAPHY*/
+/*This style targets all the display text with the main Google display font*/
+h4.contact, h5.jumbotron-heading, .navbar-brand, .list-unstyled  {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #d0f472;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h4 {
+  text-align: center;
+}
+
+h4.contact, h2.jumbotron-heading, .navbar-brand, .list-unstyled  {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  color: #598e7b;
+  font-size: 60px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h4 {
+  text-align: center;
+}
+
+h4.contact, h3.jumbotron-heading, .navbar-brand, .list-unstyled  {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.center {s
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h4 {
+  text-align: center;
+}
+
+h4.contact, h4.jumbotron-heading, .navbar-brand, .list-unstyled  {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  color: #de44a6;
+  font-size: 60px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h4 {
+  text-align: center;
+}
+
+h4.contact, h6.jumbotron-heading, .navbar-brand, .list-unstyled  {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 60px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+h4 {
+  text-align: center;
+}
+
+
+/*This rule styles all the display type that isn't bold*/
+p.lead, .my-2, .card-text, footer {
+font-family: "Gotham", sans-serif;
+color: #d0f472;
+}
+
+p2.lead, .my-2, .card-text, footer {
+font-family: "Gotham", sans-serif;
+color: black;
+}
+
+.season-intro {
+  font-family: "Gotham", sans-serif;
+  font-size: 50px;
+  color: #050707;
+  padding-top: 50px;
+  padding-left: 100px;
+  line-height: 0.9;
+  text-align: left;       /* top-left placement */
+}
+
+/*This rule targets your first/last name and your About text*/
+.navbar-brand, h4.contact {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white !important;
+}
+
+/*This rule targets the About Me explanation*/
+p.text-muted {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.1rem;
+  line-height: 2.0rem;
+  color: white !important;
+}
+
+/*This rule targets the main h1 heading*/
+  h1.jumbotron-heading {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  /*This rule targets the type below the main heading*/
+p.lead {
+  font-size: 1.3rem;
+}
+  .my-2, .card-text {
+    font-size: 1rem;
+}
+
+/*BUTTONS
+/*This turns off the three-line "more" button's blue outline*/
+button:focus {
+  outline: none;
+}
+
+/*This controls the Font Awesome spacing*/
+i {
+  margin: .5rem;
+}
+
+/*This allows the Font Awesome icons (Twitter, Linked In) to float next to each other on small screens instead of being stacked*/
+li {
+  float: left;
+}
+
+/*JUMBOTRON SPACING
+This controls the spacing and background color for the entire jumbotron*/
+.jumbotron {
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+/*If you have several rows of jumbotron items, this rule determines the last one will have a margin of 0. It is a "conditional" or pseudo class*/
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+/*This rule gives the jumbotron heading a 300 weight*/
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+/*This rule gives the jumbotron container a max width*/
+.jumbotron .container {
+  max-width: 50rem;
+}
+
+/*This style controls link colors*/
+a {
+  color: black;
+}
+
+/*This gets rid of the underline on a link when it is hovered over*/
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+/*OTHER MEDIA QUERIES—Adjust them as you preview the buildout on different screens*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+  .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+/*When on larger screen, this makes Font Awesome icons stack on top of each other */
+  li {
+    float: none;
+  }
+}
+
+/*Embedresponsively code for Youtube video*/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+.spring-container {
+  position: relative;       /* parent for absolute positioning */
+  background-color: #de44a6 !important;
+  width: 100%;
+  height: 100vh;            /* full viewport height */
+  text-align: center;       /* center the title horizontally */
+  overflow: hidden;         /* hide any overflow if needed */
+}
+
+.season-title {
+  position: relative;   /* REQUIRED for z-index to work */
+  z-index: 10;          /* higher than gallery-section (2) */
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 400px;
+  color: #050707;
+  text-align: center;
+  padding-top: 80px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.season-sub {
+  font-family: "Gotham", sans-serif;
+  text-align: center;
+  color: #050707;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+
+/* remove or override the z-index so the section does NOT form its own stacking context */
+.gallery-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: auto; /* <-- remove the stacking context */
+}
+
+/* give img3 + img4 a higher z-index than the title */
+.img3,
+.img4 {
+  z-index: 20;            /* above .season-title (10) */
+}
+
+/* make hover bring any image fully to front (above title) */
+.gallery-section img:hover {
+  transform: scale(1.2) rotate(-10deg);
+  z-index: 30; /* higher than .img3/.img4 and .season-title */
+}
+
+
+.gallery-section img {
+  position: absolute;
+  width: 20%;       /* you can freely change this */
+  transition: all 0.5s;
+}
+
+/* NOW you can move them anywhere on the page */
+.img1, .img2, .img3, .img4 {
+  position: absolute;
+  transition: all 0.5s;
+}
+
+/* RESPONSIVE POSITIONS & SIZE */
+.img1 {
+  top: 20%;
+  left: 34%;
+  width: 13%;
+  max-width: 240px;  /* <-- cap the width */
+  z-index: 0;
+}
+
+.img2 {
+  top: 12%;
+  right: 14.3%;
+  width: 17.4%;
+  max-width: 319px;
+  z-index: 0;
+}
+
+.img3 {
+  bottom: 20%;
+  left: 52%;
+  width: 13%;
+  max-width: 240px;
+  z-index: 20;
+}
+
+.img4 {
+  bottom: 16%;
+  left: 13%;
+  width: 13%;
+  max-width: 240px;
+  z-index: 20;
+}
+
+/* Hover animation stays the same */
+.gallery-section img:hover {
+  transform: scale(1.2) rotate(-10deg);
+  z-index: 30;
+}
+
+
+/* NEXT SEASON INDICATOR */
+.next-season {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Gotham", sans-serif;
+  color: #050707;
+  cursor: pointer;
+  opacity: 0.8;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0% { 
+    opacity: 0.5; 
+    transform: translateX(-50%) scale(1); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: translateX(-50%) scale(1.15); 
+  }
+  100% { 
+    opacity: 0.5; 
+    transform: translateX(-50%) scale(1); 
+  }
+}
+
+/* Arrow styling */
+.arrow-down {
+  width: 12px;
+  height: 12px;
+  margin: 0.4rem auto 0;
+  border-left: 2px solid #050707;
+  border-bottom: 2px solid #050707;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+/* Bonus: arrow moves slightly on hover */
+.next-season:hover .arrow-down {
+  transform: rotate(-45deg) translateY(0px);
+}
+
+.arrow-down2 {
+  width: 12px;
+  height: 12px;
+  margin: 0.4rem auto 0;
+  border-left: 2px solid #d0f472;
+  border-bottom: 2px solid #d0f472;
+  transform: rotate(135deg);
+  transition: transform 0.3s ease;
+}
+
+/* Bonus: arrow moves slightly on hover */
+.next-season:hover .arrow-down2 {
+  transform: rotate(135deg) translateY(0px);
+}
+
+#spring .next-season {
+  transform: translate(-50%, -2rem);
+}
+
+/* ================= SUMMER SECTION ================= */
+
+.summer-container {
+  position: relative;   /* 👈 REQUIRED */
+  width: 100%;
+  height: 100vh;
+}
+
+/* ROW */
+.summer-row {
+  height: 25vh;
+  display: flex;
+  align-items: center; /* TRUE vertical centering */
+  overflow: hidden;
+  position: relative;
+}
+
+/* ZIG ZAG */
+.summer-row.left {
+  justify-content: flex-start;
+}
+
+.summer-row.right {
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
+
+/* BACKGROUNDS */
+.row-1 { background: #d0f472; }
+.row-2 { background: #598e7b; }
+.row-3 { background: #ffffff; }
+.row-4 { background: #de44a6; }
+
+/* IMAGE */
+.summer-image {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* IMAGE STACK */
+.image-stack {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* ALL IMAGES */
+.image-stack img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform .6s cubic-bezier(.2,.8,.2,1);
+}
+
+/* DEPTH ORDER */
+.image-stack img:nth-child(1) { z-index: 4; }
+.image-stack img:nth-child(2) { z-index: 3; }
+.image-stack img:nth-child(3) { z-index: 2; }
+.image-stack img:nth-child(4) { z-index: 1; }
+
+/* TITLE */
+.summer-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Gotham", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  font-size: clamp(6rem, 13vw, 18rem);
+  line-height: 1;
+  white-space: nowrap;
+
+  transition: transform .6s cubic-bezier(.2,.8,.2,1);
+}
+
+.summer-title.dark { color: #050707; }
+.summer-title.pink { color: #de44a6; }
+.summer-title.green { color: #d0f472; }
+.summer-title.white { color: #ffffff; }
+
+/* ================= HOVER INTERACTION ================= */
+
+/* LEFT ROW — IMAGES PUSH RIGHT */
+.summer-row.left .summer-image:hover img:nth-child(1) {
+  transform: translateX(40px);
+}
+
+.summer-row.left .summer-image:hover img:nth-child(2) {
+  transform: translateX(90px) scale(.96);
+}
+
+.summer-row.left .summer-image:hover img:nth-child(3) {
+  transform: translateX(150px) scale(.92);
+}
+
+.summer-row.left .summer-image:hover img:nth-child(4) {
+  transform: translateX(220px) scale(.88);
+}
+
+/* RIGHT ROW — IMAGES PUSH LEFT */
+.summer-row.right .summer-image:hover img:nth-child(1) {
+  transform: translateX(-40px);
+}
+
+.summer-row.right .summer-image:hover img:nth-child(2) {
+  transform: translateX(-90px) scale(.96);
+}
+
+.summer-row.right .summer-image:hover img:nth-child(3) {
+  transform: translateX(-150px) scale(.92);
+}
+
+.summer-row.right .summer-image:hover img:nth-child(4) {
+  transform: translateX(-220px) scale(.88);
+}
+
+/* TITLE EXIT (PUSHED BY IMAGES) */
+.summer-row.left .summer-image:hover + .summer-title {
+  transform: translateX(120%);
+}
+
+.summer-row.right .summer-image:hover + .summer-title {
+  transform: translateX(-120%);
+}
+
+/* ================= NEXT SEASON ARROW ================= */
+
+.next-season {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  font-family: "Gotham", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #050707;
+  cursor: pointer;
+  opacity: 0.75;
+
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+.arrow-down {
+  width: 12px;
+  height: 12px;
+  margin: 0.4rem auto 0;
+  border-left: 2px solid #050707;
+  border-bottom: 2px solid #050707;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease;
+}
+
+.next-season:hover .arrow-down {
+  transform: rotate(-45deg) translateY(4px);
+}
+
+/* PULSE */
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* FALL SECTION STYLES */
+.fall-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #d0f472;
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Intro text at top */
+.fall-page .season-intro {
+  font-family: "Gotham", sans-serif;
+  font-size: 50px;
+  color: #050707;
+  padding-left: 100px;
+  line-height: 0.1;
+  text-align: left;
+}
+
+/* Gallery row — TRUE CENTER, TOP ALIGNED */
+.fall-gallery {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;     /* 👈 TOP ALIGN ITEMS */
+  gap: 4rem;
+
+  max-width: none;
+  padding: 0;
+}
+
+/* Each item */
+.fall-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image wrapper — enforces TOP alignment */
+.fall-image-wrap {
+  height: 320px;               /* controls visual rhythm */
+  display: flex;
+  align-items: flex-start;     /* 👈 IMAGES ALIGN AT TOP */
+}
+
+/* Images */
+.fall-item img {
+  width: 300px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.fall-item img:hover {
+  transform: scale(1.2) rotate(-10deg);
+  z-index: 10;
+}
+
+/* Header */
+.fall-header {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #050707;
+}
+
+/* Subheader */
+.fall-subheader {
+  font-family: "Gotham", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 0.3rem;
+}
+
+.fall-subheader .subsmall {
+  display: block;
+  font-size: 0.85rem;
+  color: #de44a6;
+}
+
+/* Next season indicator */
+.fall-page .next-season {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Gotham", sans-serif;
+  color: #050707;
+  cursor: pointer;
+  opacity: 0.8;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+/* WINTER SECTION */
+.winter-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black; /* dark contrast like Spotify */
+  overflow: hidden;
+}
+
+.season-title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  text-align: center;
+
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 400px;
+  color: black;
+
+  z-index: 10;      /* behind albums */
+  pointer-events: none;
+}
+
+#winter .season-intro {
+  color: #d0f472;
+}
+
+
+/* WINTER TITLE — green */
+#winter .season-title {
+  color: #d0f472; /* green */
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 400px;
+  z-index: 10;
+  pointer-events: none;
+}
+/* 3D DOMINO STACK */
+.winter-domino {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1200px;              /* 👈 depth */
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+/* Individual albums */
+.domino {
+  width: 260px;
+  margin-left: -80px;               /* overlap */
+  transform-origin: center center;
+  transition: transform 0.6s ease;
+  cursor: pointer;
+}
+
+/* Staggered depth + angle */
+
+.d1 {
+  transform:
+    translate(-80px, 80px)
+    scale(1.15)
+    rotateY(-18deg);
+  z-index: 4;
+}
+
+.d2 {
+  transform:
+    translate(-40px, 40px)
+    scale(1.15)
+    rotateY(-18deg);
+  z-index: 3;
+}
+
+.d3 {
+  transform:
+    translate(0px, 0px)
+    scale(1.15)
+    rotateY(-18deg);
+  z-index: 2;
+}
+
+.d4 {
+  transform:
+    translate(40px, -40px)
+    scale(1.15)
+    rotateY(-18deg);
+  z-index: 1;
+}
+
+.domino:hover {
+  transform:
+    translate(40px, -80px)
+    scale(1.25)
+    rotateY(0deg);
+  z-index: 10;
+}
+
+/* Next season indicator */
+.winter-page .next-season {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Gotham", sans-serif;
+  color: #d0f472;
+  cursor: pointer;
+  opacity: 0.8;
+  animation: pulse 1.8s infinite ease-in-out;
+}
+
+/* === ANIMATIONS FOR INDEX PAGE === */
+
+/* Slide in from left from screen edge */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100vw); /* off-screen left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from right from screen edge */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100vw); /* off-screen right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fold up effect (paragraph) */
+@keyframes foldUp {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+/* Fade in (button) */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Smooth easing for all */
+.jumbotron-heading, p.lead, .home-button {
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* === APPLY ANIMATIONS WITH STAGGER === */
+.jumbotron-heading:nth-of-type(1) {
+  animation: slideInLeft 1s forwards;
+}
+
+.jumbotron-heading:nth-of-type(2) {
+  animation: slideInRight 1s forwards;
+  animation-delay: 0.2s;
+}
+
+.jumbotron-heading:nth-of-type(3) {
+  animation: slideInLeft 1s forwards;
+  animation-delay: 0.4s;
+}
+
+.jumbotron-heading:nth-of-type(4) {
+  animation: slideInRight 1s forwards;
+  animation-delay: 0.6s;
+}
+
+.jumbotron-heading:nth-of-type(5) {
+  animation: slideInLeft 1s forwards;
+  animation-delay: 0.8s;
+}
+
+.jumbotron-heading:nth-of-type(6) {
+  animation: slideInRight 1s forwards;
+  animation-delay: 1s;
+}
+
+.jumbotron-heading:nth-of-type(7) {
+  animation: slideInLeft 1s forwards;
+  animation-delay: 1.2s;
+}
+
+.jumbotron-heading:nth-of-type(8) {
+  animation: slideInRight 1s forwards;
+  animation-delay: 1.4s;
+}
+
+/* Paragraph fold up */
+p.lead {
+  opacity: 0;
+  animation: foldUp 1s forwards;
+  animation-delay: 1.6s;
+}
+
+/* Button fade in */
+.home-button {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 2s;
+}
+
+/* ================= INDIVIDUAL PROJECT PAGES ================= */
+
+.project-section {
+  background-color: #598e7b;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.project-title {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 4rem; 
+  margin-bottom: 2rem;
+  color: #d0f472; 
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.project-description {
+  font-family: "Gotham", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
+  max-width: 800px; 
+  margin: 0 auto 4rem; 
+  color: white; 
+  text-align: left; 
+}
+
+/* ================= GALLERY (Row Height Match) ================= */
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: center;
+  align-items: center;   
+  gap: 15px;             
+}
+
+.project-card {
+  flex: 0 0 auto;        
+  width: auto;           
+  background: none;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.project-card img.project-image {
+  height: 300px;         /* Standard Height */
+  width: auto;           
+  display: block;
+  border-radius: 4px;
+  cursor: zoom-in;       
+  transition: transform 0.2s ease;
+}
+
+/* --- NEW: LARGE GALLERY ROW --- */
+.project-gallery-lg {
+  margin-top: 15px; /* Adds space between the two rows */
+}
+
+/* Forces images in the "lg" gallery to be taller */
+.project-gallery-lg .project-card img.project-image {
+  height: 500px;  /* CHANGE THIS VALUE to make them bigger/smaller */
+}
+
+.project-card img.project-image:hover {
+  transform: scale(1.02); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+  .project-card img.project-image,
+  .project-gallery-lg .project-card img.project-image {
+    width: 100%;
+    height: auto;        /* Resets height for mobile */
+    cursor: default;
+  }
+}
+
+/* ================= NEW VIDEO BUTTON STYLES ================= */
+.video-button-container {
+  margin-top: 5rem; /* Space from images */
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.video-link-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #d0f472; /* Spotify Lime Green */
+  color: #050707; /* Dark Text */
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px; /* Pill shape */
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.video-link-btn:hover {
+  transform: scale(1.05); /* Grows slightly */
+  background-color: #de44a6; /* Spotify Pink on hover */
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.video-link-btn i {
+  margin-right: 10px; /* Space between icon and text */
+}
+/* ================= LIGHTBOX STYLES ================= */
+.lightbox {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #d0f472; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ================= INDIVIDUAL PROJECT PAGES ================= */
+
+/* 1. STANDARD PAGE LAYOUT (Mahler, etc.) */
+/* This restores the breathing room at the top */
+.project-section {
+  background-color: #598e7b;
+  padding: 4rem 2rem;  /* <--- RESTORED PADDING HERE */
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* 2. SPLIT VIEW OVERRIDE (Granfalloon Only) */
+/* This removes the padding ONLY when the "split-view" class is used */
+.project-section.split-view {
+  padding: 0;           /* Remove standard padding */
+  padding-top: 56px;    /* Just enough to clear the Navbar */
+  height: 100vh;        /* Force full height */
+  overflow: hidden;     /* Hide scrollbar on body */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* LEFT COLUMN: SCROLLABLE TEXT */
+.text-column {
+  height: 85vh; 
+  overflow-y: auto; 
+  padding: 2rem 3rem; 
+  text-align: left;
+  /* Custom Scrollbar Styling */
+  scrollbar-width: thin;
+  scrollbar-color: #d0f472 #598e7b;
+}
+
+/* RIGHT COLUMN: LARGE IMAGE */
+.image-column {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+}
+
+/* Title Styling (Left Aligned) */
+.project-title {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem; 
+  margin-bottom: 2rem;
+  color: #d0f472; /* Lime Green */
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+/* Description Text */
+.project-description {
+  font-family: "Gotham", sans-serif;
+  font-size: 1.1rem; /* Slightly smaller to fit more text */
+  line-height: 1.6rem;
+  color: white; 
+  text-align: left;
+}
+
+/* The Big Image */
+.hero-image {
+  max-height: 85vh; /* Ensure it fits vertically */
+  width: auto;
+  max-width: 100%;
+  object-fit: contain; /* Show the whole poster, don't crop */
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.02);
+}
+
+/* ================= RESPONSIVE ================= */
+/* On mobile/tablet, revert to stacking */
+@media (max-width: 991px) {
+  .split-view {
+    height: auto; /* Allow natural scrolling */
+    overflow: visible;
+    padding-top: 2rem;
+  }
+  
+  .text-column {
+    height: auto;
+    overflow-y: visible;
+    padding: 2rem;
+    order: 2; /* Put text below image on mobile */
+  }
+
+  .image-column {
+    height: auto;
+    padding: 0 2rem;
+    order: 1; /* Put image on top on mobile */
+  }
+
+  .hero-image {
+    max-height: 500px;
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+}
+
+/* ================= LIGHTBOX STYLES (Keep these) ================= */
+.lightbox {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #d0f472; 
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ================= YES AND PAGE SPECIFIC STYLES ================= */
+
+/* Override spacing specifically for this page */
+.yesand-page {
+  padding-top: 4rem;
+  padding-bottom: 0;
+  overflow-x: hidden; /* Hides horizontal scroll bar caused by marquee */
+}
+
+/* Specific text alignment for Yes And */
+.yesand-text {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* The Single Large Hero Image on the Right */
+.yesand-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yesand-hero-img {
+  max-height: 60vh; /* Keeps it strictly on screen */
+  width: auto;
+  max-width: 100%;
+  border-radius: 4px;
+  cursor: zoom-in;
+}
+
+/* --- INFINITE SCROLLING MARQUEE --- */
+.marquee-container {
+  width: 100vw; /* Full screen width */
+  margin-left: calc(-50vw + 50%); /* Center it relative to container */
+  margin-top: 4rem;
+  overflow: hidden; /* Hide anything outside the box */
+  background-color: rgba(0,0,0,0.2); /* Optional: slight background track */
+  padding: 20px 0;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* Allows content to be wider than screen */
+  /* The Animation */
+  animation: scrollLeft 30s linear infinite;
+}
+
+.marquee-img {
+  height: 300px; /* Fixed height for the strip */
+  width: auto;   /* Natural width */
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: transform 0.2s;
+  flex-shrink: 0; /* Prevents squishing */
+}
+
+.marquee-img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Pause animation on hover so user can click easier */
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+/* Define the scrolling motion */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves half way (since we duplicated images) */
+  }
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 768px) {
+  .marquee-img {
+    height: 200px; /* Smaller strip on phone */
+  }
+  .yesand-hero-img {
+    max-height: 50vh;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ================= IU FOOTBALL PAGE STYLES ================= */
+
+/* Page Layout Override */
+.iufootball-page {
+  padding: 0;
+  height: 100vh; /* Force full screen height */
+  overflow: hidden; /* Hide main scrollbars */
+  background-color: #598e7b;
+}
+
+/* LEFT SIDE: TEXT */
+.content-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  z-index: 10;
+  background-color: #598e7b; /* Ensures text sits on top of color */
+}
+
+.content-wrapper {
+  max-width: 500px;
+}
+
+/* RIGHT SIDE: THE WALL OF IMAGES */
+.visual-side {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;g
+  background-color: ##598e7b; /* Dark background for photos */
+}
+
+.wall-grid {
+  display: flex;
+  height: 120%; /* Extra height to hide edges */
+  width: 100%;
+  transform: translateY(-10%) rotate(0deg); /* Optional: add slight angle if desired */
+  gap: 15px; /* Space between columns */
+  justify-content: center;
+}
+
+/* Individual Vertical Column */
+.wall-col {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* The Moving Track inside the column */
+.wall-track {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between images vertically */
+  width: 100%;
+}
+
+.wall-track img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+/* --- ANIMATIONS --- */
+
+/* Scroll UP Animation */
+.scroll-up {
+  animation: scrollUp 20s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); } /* Moves up half way (duplicates) */
+}
+
+/* Scroll DOWN Animation */
+.scroll-down {
+  animation: scrollDown 20s linear infinite;
+}
+
+@keyframes scrollDown {
+  0% { transform: translateY(-50%); } /* Start from halfway */
+  100% { transform: translateY(0); }
+}
+
+/* RESPONSIVE: On Mobile, just stack them normally */
+@media (max-width: 991px) {
+  .iufootball-page {
+    height: auto;
+    overflow: auto;
+  }
+  
+  .content-side {
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .visual-side {
+    height: 600px; /* Give it a fixed height on mobile */
+  }
+  
+  .wall-grid {
+    height: 100%;
+    transform: none;
+  }
+}
+
+/* ================= EDITORIAL PAGE STYLES ================= */
+
+/* Page spacing */
+.editorial-page {
+  padding-top: 4rem;
+  padding-bottom: 0;
+  overflow-x: hidden;
+}
+
+/* 3-Column Text Styling */
+.editorial-text-row {
+  max-width: 1200px; /* Keeps the 3 columns from getting too wide on huge screens */
+  margin: 0 auto;    /* Centers the row */
+  text-align: center; /* Centers the content inside */
+}
+
+.editorial-header {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #d0f472; /* Lime Green */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.editorial-body {
+  font-family: "Gotham", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: white;
+  text-align: left; /* Keeps paragraph text readable */
+}
+
+/* --- REUSING MARQUEE STYLES --- */
+/* (If you already added .marquee-container from the previous step, you don't need to add it again. 
+   If you haven't, paste the block below.) */
+
+.marquee-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 4rem;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.2);
+  padding: 20px 0;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollLeft 30s linear infinite;
+}
+
+.marquee-img {
+  height: 300px;
+  width: auto;
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.marquee-img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .editorial-body {
+    text-align: center; /* On mobile, center the text for stacking */
+  }
+}
+
+/* ================= CINZANO & LIGHTBOX UPDATES ================= */
+
+/* CINZANO PAGE SETUP */
+.cinzano-page {
+  padding: 0;
+  height: calc(100vh - 56px); 
+  overflow: hidden; 
+  background-color: #598e7b;
+}
+
+.cinzano-page .content-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  z-index: 10;
+  background-color: #598e7b; 
+}
+
+.cinzano-page .visual-side {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #598e7b; 
+}
+
+/* WALL GRID STYLES */
+.wall-grid {
+  display: flex;
+  height: 120%; 
+  width: 100%;
+  transform: translateY(-10%); 
+  gap: 15px; 
+  justify-content: center;
+}
+
+.wall-col {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.wall-track {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+  width: 100%;
+}
+
+/* IMAGE STYLES - with Zoom Cursor */
+.wall-track img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.2s;
+  
+  /* THIS ADDS THE MAGNIFYING GLASS CURSOR */
+  cursor: zoom-in; 
+}
+
+.wall-track img:hover {
+  opacity: 0.9;
+  transform: scale(0.98); /* Slight press effect */
+}
+
+/* PAUSE ANIMATION ON HOVER */
+/* This makes it easier to click a moving image */
+.wall-track:hover {
+  animation-play-state: paused;
+}
+
+/* ANIMATIONS */
+.scroll-up {
+  animation: scrollUp 30s linear infinite; /* Slowed down slightly to 30s for better clicking */
+}
+
+.scroll-down {
+  animation: scrollDown 30s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); } 
+}
+
+@keyframes scrollDown {
+  0% { transform: translateY(-50%); } 
+  100% { transform: translateY(0); }
+}
+
+/* ================= LIGHTBOX MODAL STYLES ================= */
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 9999; /* Sit on top */
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 5px;
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .cinzano-page {
+    height: auto;
+    overflow: auto;
+  }
+  .cinzano-page .visual-side {
+    height: 600px; 
+  }
+  .wall-grid {
+    height: 100%;
+    transform: none;
+  }
+}
+
+/* ================= CINZANO 100 PAGE STYLES ================= */
+
+/* Page Layout Override */
+.cinzano100-page {
+  padding: 0;
+  height: calc(100vh - 56px); 
+  overflow: hidden; 
+  background-color: #598e7b;
+}
+
+/* Left Content Side */
+.content-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  z-index: 10;
+  background-color: #598e7b;
+}
+
+.content-wrapper {
+  max-width: 500px;
+}
+
+/* Right Visual Side */
+.visual-side {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #598e7b;
+}
+
+/* Container for the 2 Groups */
+.cinzano-split-grid {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* The Group (Label + Scroll) */
+.column-group {
+  flex: 1; 
+  display: flex; 
+  height: 100%;
+  border-left: 1px solid rgba(255,255,255,0.1); 
+}
+
+/* Vertical Text Label */
+.vertical-label {
+  width: 60px; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg); 
+  
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: #d0f472; /* Lime Green */
+  background-color: rgba(0,0,0,0.2); 
+  cursor: default;
+}
+
+/* The Scrolling Wrapper */
+.scroll-wrapper {
+  flex: 1; 
+  overflow: hidden;
+  height: 120%; 
+  transform: translateY(-10%);
+}
+
+.wall-track {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  padding: 0 15px; 
+}
+
+/* --- IMAGE INTERACTION --- */
+.wall-track img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+  transition: opacity 0.2s;
+  
+  /* Shows the magnifying glass cursor */
+  cursor: zoom-in;
+}
+
+/* ON HOVER: Slight opacity dip to indicate clickable, but NO scaling */
+.wall-track img:hover {
+  opacity: 0.8;
+}
+
+/* Pause animation when hovering the column so you can actually click */
+.scroll-wrapper:hover .wall-track {
+  animation-play-state: paused;
+}
+
+/* Animations */
+.scroll-up {
+  animation: scrollUp 25s linear infinite;
+}
+
+.scroll-down {
+  animation: scrollDown 25s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); } 
+}
+
+@keyframes scrollDown {
+  0% { transform: translateY(-50%); } 
+  100% { transform: translateY(0); }
+}
+
+/* --- LIGHTBOX MODAL STYLES --- */
+.lightbox {
+  display: none; 
+  position: fixed; 
+  z-index: 9999; 
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.9); 
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 5px;
+  animation-name: zoom;
+  animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .cinzano100-page {
+    height: auto;
+    overflow: auto;
+  }
+  .visual-side {
+    height: 800px;
+  }
+  .column-group {
+    border: none;
+  }
+}
+
+/* ================= FALL FOR ARKANSAS PAGE STYLES ================= */
+
+/* Page Layout Override */
+.fallforarkansas-page {
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #598e7b;
+}
+
+/* Left Text Side (Consistent with other pages) */
+.fallforarkansas-page .content-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  z-index: 10;
+  background-color: #598e7b;
+  overflow-y: auto; /* Allows scrolling text if it gets too long */
+}
+
+/* Right Visual Side */
+.fallforarkansas-page .visual-side {
+  height: 100%;
+  padding: 4rem;
+  overflow-y: auto; /* Allows the collage to scroll vertically */
+  background-color: #51b95e; /* Slightly lighter green for contrast */
+}
+
+/* THE COLLAGE CONTAINER */
+.ark-collage-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 50px; /* Space at bottom for scrolling */
+}
+
+/* THE CARD ITEM */
+.ark-card {
+  width: 45%; /* Two per row */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+/* Stagger every other card for a "collage" feel */
+.ark-card:nth-child(even) {
+  margin-top: 60px; /* Pushes right-side cards down */
+}
+
+/* IMAGE STYLING */
+.ark-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+}
+
+.ark-img:hover {
+  opacity: 0.9;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* CAPTION STYLING - LOOKS LIKE A TICKET/PASS */
+.ark-caption {
+  margin-top: 15px;
+  text-align: left;
+  border-left: 2px solid #d0f472; /* Lime green accent line */
+  padding-left: 15px;
+}
+
+.event-tag {
+  display: block;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #d0f472; /* Lime Green */
+  margin-bottom: 5px;
+}
+
+.ark-caption p {
+  font-family: "Gotham", sans-serif;
+  font-size: 0.9rem;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .fallforarkansas-page {
+    height: auto;
+    overflow: auto;
+  }
+  
+  .fallforarkansas-page .visual-side {
+    padding: 2rem;
+    height: auto;
+  }
+  
+  .ark-card {
+    width: 100%; /* Stack vertically on mobile */
+    margin-bottom: 40px;
+  }
+  
+  .ark-card:nth-child(even) {
+    margin-top: 0;
+  }
+}
+
+/* THE CARD ITEM (Standard size for landscape images) */
+.ark-card {
+  width: 45%; /* Two per row */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+/* --- NEW RULE FOR THE SMALL CARD --- */
+/* Makes the vertical image smaller */
+.ark-card-small {
+  width: 30%; /* Reduces width from 45% to 30% */
+}
+
+/* Stagger every other card for a "collage" feel */
+.ark-card:nth-child(even) {
+  margin-top: 60px; /* Pushes right-side cards down */
+}
+
+/* ================= TROJAN HORSE SPECIFIC STYLES ================= */
+
+/* Page Background */
+#trojan-horse-page {
+  background-color: #598e7b !important;
+}
+
+/* Main Container */
+#trojan-horse-page .th-project-section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Title Styling */
+#trojan-horse-page .th-project-title {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #d0f472; /* Lime Green accent */
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+/* --- Top Info Grid (Ask/Insight/Concept) --- */
+#trojan-horse-page .th-info-grid {
+  margin-bottom: 4rem;
+  text-align: left;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding: 2rem 0;
+}
+
+#trojan-horse-page .th-info-col h5 {
+  color: #d0f472;
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#trojan-horse-page .th-info-col p {
+  color: white;
+  font-family: "Gotham", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+/* --- Gallery Rows --- */
+#trojan-horse-page .th-gallery-wrapper {
+  margin-bottom: 5rem;
+}
+
+#trojan-horse-page .th-gallery-subheading {
+  font-family: "Gotham", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #d0f472;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  padding-left: 10px;
+  border-left: 4px solid #fff;
+}
+
+#trojan-horse-page .th-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#trojan-horse-page .th-card {
+  flex: 0 0 auto;
+  width: auto;
+  background: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Images: 4 across */
+#trojan-horse-page .th-image {
+  height: 220px; /* Fixed height for uniformity */
+  width: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+  object-fit: cover;
+}
+
+#trojan-horse-page .th-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* --- Lightbox (Generic styles can be shared, but if you need specific...) --- */
+#trojan-horse-page .lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  align-items: center; justify-content: center;
+}
+
+#trojan-horse-page .lightbox-content {
+  margin: auto; display: block;
+  max-width: 90%; max-height: 90vh;
+  border-radius: 5px;
+  animation-name: zoom; animation-duration: 0.3s;
+}
+
+@keyframes zoom { from {transform:scale(0)} to {transform:scale(1)} }
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  #trojan-horse-page .th-info-col { margin-bottom: 2rem; }
+  
+  #trojan-horse-page .th-image {
+    width: 100%;
+    height: auto; /* Stacks vertically on mobile */
+  }
+}
