@@ -1,6 +1,13 @@
 /*Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap*/
 
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham-Book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* DEFAULT (portfolio + inner pages) */
 body {
@@ -70,7 +77,7 @@ border: 2px solid white !important;
 /*TYPOGRAPHY*/
 /*This style targets all the display text with the main Google display font*/
 h4.contact, h5.jumbotron-heading, .navbar-brand, .list-unstyled  {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 60px;
   color: #d0f472;
@@ -88,7 +95,7 @@ h4 {
 }
 
 h4.contact, h2.jumbotron-heading, .navbar-brand, .list-unstyled  {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #598e7b;
   font-size: 60px;
@@ -106,7 +113,7 @@ h4 {
 }
 
 h4.contact, h3.jumbotron-heading, .navbar-brand, .list-unstyled  {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #ffffff;
   font-size: 60px;
@@ -124,7 +131,7 @@ h4 {
 }
 
 h4.contact, h4.jumbotron-heading, .navbar-brand, .list-unstyled  {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: #de44a6;
   font-size: 60px;
@@ -142,7 +149,7 @@ h4 {
 }
 
 h4.contact, h6.jumbotron-heading, .navbar-brand, .list-unstyled  {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   color: black;
   font-size: 60px;
@@ -162,17 +169,17 @@ h4 {
 
 /*This rule styles all the display type that isn't bold*/
 p.lead, .my-2, .card-text, footer {
-font-family: "Helvetica Neue", sans-serif;
+font-family: "Gotham", sans-serif;
 color: #d0f472;
 }
 
 p2.lead, .my-2, .card-text, footer {
-font-family: "Helvetica Neue", sans-serif;
+font-family: "Gotham", sans-serif;
 color: black;
 }
 
 .season-intro {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 50px;
   color: #050707;
   padding-top: 50px;
@@ -315,7 +322,7 @@ a:hover {
 .season-title {
   position: relative;   /* REQUIRED for z-index to work */
   z-index: 10;          /* higher than gallery-section (2) */
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 400px;
   color: #050707;
@@ -326,7 +333,7 @@ a:hover {
 }
 
 .season-sub {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   text-align: center;
   color: #050707;
   font-size: 24px;
@@ -416,7 +423,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   color: #050707;
   cursor: pointer;
   opacity: 0.8;
@@ -545,7 +552,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
 
@@ -615,7 +622,7 @@ a:hover {
   transform: translateX(-50%);
   text-align: center;
 
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -660,7 +667,7 @@ a:hover {
 
 /* Intro text at top */
 .fall-page .season-intro {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 50px;
   color: #050707;
   padding-left: 100px;
@@ -712,7 +719,7 @@ a:hover {
 
 /* Header */
 .fall-header {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   margin-top: 1rem;
@@ -721,7 +728,7 @@ a:hover {
 
 /* Subheader */
 .fall-subheader {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 1rem;
   color: #333;
   margin-top: 0.3rem;
@@ -740,7 +747,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   color: #050707;
   cursor: pointer;
   opacity: 0.8;
@@ -765,7 +772,7 @@ a:hover {
   width: 100%;
   text-align: center;
 
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 400px;
   color: black;
@@ -788,7 +795,7 @@ a:hover {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 400px;
   z-index: 10;
@@ -864,7 +871,7 @@ a:hover {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   color: #d0f472;
   cursor: pointer;
   opacity: 0.8;
@@ -989,7 +996,7 @@ p.lead {
 }
 
 .project-title {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 4rem; 
   margin-bottom: 2rem;
@@ -999,7 +1006,7 @@ p.lead {
 }
 
 .project-description {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 1.25rem;
   line-height: 1.8rem;
   max-width: 800px; 
@@ -1077,7 +1084,7 @@ p.lead {
   padding: 15px 40px;
   background-color: #d0f472; /* Spotify Lime Green */
   color: #050707; /* Dark Text */
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -1192,7 +1199,7 @@ p.lead {
 
 /* Title Styling (Left Aligned) */
 .project-title {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 3.5rem; 
   margin-bottom: 2rem;
@@ -1207,7 +1214,7 @@ p.lead {
 
 /* Description Text */
 .project-description {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 1.1rem; /* Slightly smaller to fit more text */
   line-height: 1.6rem;
   color: white; 
@@ -1529,7 +1536,7 @@ p.lead {
 }
 
 .editorial-header {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #d0f472; /* Lime Green */
@@ -1539,7 +1546,7 @@ p.lead {
 }
 
 .editorial-body {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 1.1rem;
   line-height: 1.6rem;
   color: white;
@@ -1816,7 +1823,7 @@ p.lead {
   text-orientation: mixed;
   transform: rotate(180deg); 
   
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 4px;
@@ -2025,7 +2032,7 @@ p.lead {
 
 .event-tag {
   display: block;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 0.75rem;
   letter-spacing: 2px;
@@ -2034,7 +2041,7 @@ p.lead {
 }
 
 .ark-caption p {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 0.9rem;
   color: white;
   margin: 0;
@@ -2098,7 +2105,7 @@ p.lead {
 
 /* Title Styling */
 #trojan-horse-page .th-project-title {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 4rem;
   margin-bottom: 2rem;
@@ -2118,7 +2125,7 @@ p.lead {
 
 #trojan-horse-page .th-info-col h5 {
   color: #d0f472;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -2126,7 +2133,7 @@ p.lead {
 
 #trojan-horse-page .th-info-col p {
   color: white;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 0.95rem;
   line-height: 1.5rem;
 }
@@ -2137,7 +2144,7 @@ p.lead {
 }
 
 #trojan-horse-page .th-gallery-subheading {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   color: #d0f472;
